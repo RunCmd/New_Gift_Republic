@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://antonberez.github.io/gift_republic/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Gift Republic</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./Gift Republic_files/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./Gift Republic_files/style.css">
+	<script src="./Gift Republic_files/jquery.min.js"></script>
+	<script src="./Gift Republic_files/masonry.pkgd.min.js"></script>
+	<script src="./Gift Republic_files/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="up_header clearfix">
+				<div class="reg">
+					<span>REGISTER OR SIGN IN</span>
+				</div>
+				<div class="cart">
+					<input type="text">
+					<span><i class="cart_icon"></i>Cart (0)</span>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="./Gift Republic_files/logo.png" alt="">
+			</div>
+			<nav>
+				<ul>
+					<li>FUN STUFF</li>
+					<li>RANGES</li>
+					<li>BY ROOM</li>
+					<li>LICENCING</li>
+					<li>EVERYTHING</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="scrolling_banner"></section>
+		<main>
+			<!-- <div class="grid_img">
+				<div class="col_1">
+					<div class="row_1">
+						<img src="img/img1.jpg" alt="">
+						<img src="img/img2.jpg" alt="">
+					</div>
+					<div class="row_2">
+						<img src="img/img4.jpg" alt="">
+					</div>
+				</div>
+				<div class="col_2">
+					<img src="img/img3.jpg" alt="">
+					<img src="img/img5.jpg" alt="">
+				</div>
+				<div class="col_3">
+					<img src="img/img6.jpg" alt="">
+				</div>
+			</div> -->
+			<div id="img_container" style="position: relative; width: 1148px; height: 570px;">
+				<div class="items" style="position: absolute; left: 0px; top: 0px;"><img src="./Gift Republic_files/img1.jpg" alt=""></div>
+				<div class="items" style="position: absolute; left: 287px; top: 0px;"><img src="./Gift Republic_files/img2.jpg" alt=""></div>
+				<div class="items" style="position: absolute; left: 574px; top: 0px;"><img src="./Gift Republic_files/img3.jpg" alt=""></div>
+				<div class="items bi" style="position: absolute; left: 0px; top: 279px;"><img src="./Gift Republic_files/img4.jpg" alt=""></div>
+				<div class="items" style="position: absolute; left: 861px; top: 0px;"><img src="./Gift Republic_files/img6.jpg" alt=""></div>
+				<div class="items" style="position: absolute; left: 574px; top: 279px;"><img src="./Gift Republic_files/img5.jpg" alt=""></div>
+			</div>
+		</main>
+		<footer class="clearfix">
+			<div class="col_f_1">
+				<ul>
+					<li>ABOUT US</li>
+					<li>BLOG</li>
+					<li>FAQ</li>
+					<li>GIFT REGISTRATION</li>
+					<li>DOQNLOAD OUR CATALOGUE</li>
+				</ul>
+			</div>
+			<div class="col_f_2">
+				<div class="subsc">
+					<p>SIGN UP TO OUR NEWSLETTER</p>
+					<input type="text" placeholder="YOUR EMAIL">
+				</div>
+				<div class="social">
+					<p>FOLLOW US</p>
+					<img src="./Gift Republic_files/f.png" alt=""><img src="./Gift Republic_files/tw.png" alt="">
+				</div>
+			</div>
+		</footer>
+		<div class="ft_down">
+				<p>©Copyright 2006-2016 Gift Republic Ltd.</p>
+				<ul>
+					<li>TERMS &amp; CONDITIONS</li>
+					<li>PRIVACY POLICY</li>
+					<li>TERMS OF USE</li>
+					<li>SITE MAP</li>
+				</ul>
+		</div>
+	</div>
+	<script>
+		var $container = $('#img_container');
+		$container.imagesLoaded( function() {
+		  	$container.masonry({
+  				columnWidth: 287,
+  				itemSelector: '.items',
+  				isFitWidth: true
+			});
+		});
+	</script>
+
+</body></html>

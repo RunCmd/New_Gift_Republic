@@ -1,0 +1,154 @@
+body {
+	background: #fff;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper {
+	width: 100%;
+	max-width: 1148px;
+	margin: 0 auto;
+}
+header {
+	width: 100%;
+}
+.reg {
+	padding-top: 10px;
+	float: left;
+	font-size: 12px;
+}
+.cart {
+	float: right;
+	padding-top: 5px;
+	font-size: 12px;
+}
+.cart_icon {
+	margin: 0 8px 0 15px;
+	display: inline-block;
+	width: 23px;
+	height: 25px;
+	background: url('../img/cart_icon.png') no-repeat 50% 50%;
+}
+.logo {
+	margin-top: 15px;
+	margin-bottom: 55px;
+	text-align: center;
+}
+nav {
+	width: 100%;
+	border-bottom: 1px solid #000;
+	margin-bottom: 25px;
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 10px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 65px;
+}
+nav ul li:last-child {
+	margin-right: 0;
+}
+.scrolling_banner {
+	width: 100%;
+	min-height: 427px;
+	background: url('../img/scroll_img1.jpg') no-repeat;
+	background-size: cover;
+}
+main {
+	padding-top: 30px;
+	width: 100%;
+}
+.grid_img {
+	width: 100%;
+}
+.col_1 {
+	width: 574px;
+	float: left;
+}
+.col_1 .row_1 {
+	margin-bottom: 13px;
+}
+.col_1 .row_1 img:first-child {
+	margin-right: 12px;
+}
+.col_2 {
+	width: 279px;
+	float: left;
+	margin-left: 8px;
+}
+.col_2 img:first-child {
+	margin-bottom: 13px;
+}
+.col_3 {
+	width: 275px;
+	float: left;
+	margin-left: 12px;
+}
+
+
+@media all and (max-width: 1150px) {
+	.grid_img {
+		width: 861px;
+		margin: 0 auto;
+	}
+	.col_2 {
+		position: absolute;
+		width: 565px;
+		top: 1325px;
+		float: none;
+		margin-left: 0;
+	}
+	.col_2 img:first-child {
+		margin-bottom: 0;
+		margin-right: 13px;
+	}
+}
+@media all and (max-width: 800px) {
+	.grid_img {
+		width: 574px;
+	}
+	.col_1 {
+		margin-bottom: 13px;
+	}
+	.col_2 {
+		position: static;
+		width: 275px;
+		float: left;
+		margin-left: 0;
+	}
+	.col_3 {
+		margin-left: 15px;
+	}
+	.col_2 img:first-child {
+		margin-bottom: 13px;
+		margin-right: 0;
+	}
+}
+@media all and (max-width: 568px) {
+	.grid_img {
+		width: 287px;
+	}
+	.col_1 {
+		width: 287px;
+	}
+	.col_1 .row_1 img:first-child {
+		margin-right: 0;
+		margin-bottom: 13px;
+	}
+	.col_1 .row_2 {
+		width: 287px;
+	}
+	.col_1 .row_2 img {
+		width: 273px;
+		height: 175px;
+	}
+	.col_3 {
+		margin-left: 0px;
+		margin-top: 12px;
+	}
+}

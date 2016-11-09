@@ -1,0 +1,136 @@
+/* 
+Author:Daniel Neshkoski;
+Version: 1.0;
+Theme:Gift Republic;
+*/
+/* Import Font CSS */
+@font-face {
+  font-family: 'Gothic-regular';
+  src:  url('../fonts/GOTHIC.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Gothic-bold';
+  src:  url('../fonts/GOTHICB.ttf')  format('truetype');
+}
+
+/* Body Start */
+body{background-color:white;font-family:"Gothic-regular";font-size:14px;}
+
+/* HEADER WRAP/ LOGO SEARCH BAR  */
+.wrap-header{width:100%;max-width:100%;padding:20px 0px;}
+.wrap-header .logo{margin:auto;width:100%;text-align:center;}
+.form-search{float:right;}
+.logo .main-logo{position: relative;left: 150px;}
+.search-icon{position:relative;float:left;right:10px;}
+.add-to-cart{float:left}
+.search-icon .search-me{color:#9e9e9e;position:absolute;right:10px;top:5px;}
+.search-icon input[placeholder], [placeholder], *[placeholder] {padding-right: 35px;}
+.search-icon input{width:200px;max-width:100%;text-align:right;border-radius:0;border:1px solid #9e9e9e;}
+
+
+/*========================= */
+/* Drop DOWN SECTION with NAVIGATION */
+.main-navigation .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.main-navigation .navbar .navbar-collapse {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.main-navigation .navbar{margin-bottom:0px;}
+.dropdown-large a{color:black;text-transform:uppercase;font-size:16px;}
+.main-navigation .nav>li>a:focus,.main-navigation .nav>li>a:hover{background-color:transparent;}
+.push-left-first{left: 17.866667%;}
+.push-left-second{left: 4.533333%}
+.dropdown-menu-large{font-family: 'Gothic-regular';width:100%;background-color:#a7e6d9;}
+.dropdown-large {
+  position: static !important;
+}
+.dropdown-toggle{text-transform:uppercase;}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: none;
+}
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 5px 25px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
+  font-family: 'Gothic-bold';
+  text-transform:uppercase;
+  font-size:14px;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: transparent;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+}
+
+/* =========================== */
+
+/* SECTION IMAGES/ALL */
+.images-all{padding:20px 0px;}
+.images-all img{width:100%;}
+#horizontal-bg{min-height:328px;width:555px;padding-top: 30px;}
+#horizontal-bg-second{padding-top: 30px;    min-height: 328px;}
+.images-all .vertical-double{min-height:592px;}
+.background-about{background-image:url("../images/fetaured-products/reg-block.png");background-repeat:no-repeat;background-size:cover;}
+.background-about h1{color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.4px 40px;
+    text-align: center;}
+.vertical-double-copy{padding-top: 20px;}
+/* ======================== */
+
+/* FOOTER SECTION */
+.main-footer{background-color:#a7e6d9;border-top:1px solid black;}
+.foot-nav {margin:20px 0px;}
+.foot-nav a{text-transform:uppercase;padding:20px 0px;color:#000;font-size:12px;font-family:'Gothic-bold';}
+.foot-nav li{padding:5px 0px;}
+.main-footer ul {list-style:none;}
+
+.social-nav{float:right; position: relative;top: 88px;right: 50px;}
+.social-nav li{padding:5px 15px;display:inline-block;}
+/*******************************/
+
+
+
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gift Republic</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="masonry.pkgd.min.js"></script>
+	<script src="imagesloaded.pkgd.min.js"></script>
+	<script src="js/slider.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="up_header clearfix">
+				<div class="reg">
+					<span>REGISTER OR SIGN IN</span>
+				</div>
+				<div class="search_box">
+					<form class="search" action="">
+						<input type="search" name="submit">
+						<input type="submit" name="submit" value="">
+					</form>
+				</div>
+				<div class="cart">
+					<i class="cart_icon"></i><span>Cart (0)</span>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<nav>
+				<ul>
+					<li class="out_list">FUN STUFF
+						<ul class="dropdown_nav">
+							<li>NEW</li>
+							<li>PICK UPS</li>
+							<li>TECH</li>
+							<li>MUGS</li>
+							<li>FESTIVAL</li>
+							<li>ZOMBIES</li>
+							<li>BLOOD</li>
+							<li>ALL</li>
+						</ul>
+					</li>
+					<li class="out_list">RANGES
+						<ul class="dropdown_nav">
+							<li>NEW</li>
+							<li>PICK UPS</li>
+							<li>TECH</li>
+							<li>MUGS</li>
+							<li>FESTIVAL</li>
+							<li>ZOMBIES</li>
+							<li>BLOOD</li>
+							<li>ALL</li>
+						</ul>
+					</li>
+					<li class="out_list">BY ROOM
+						<ul class="dropdown_nav">
+							<li>NEW</li>
+							<li>PICK UPS</li>
+							<li>TECH</li>
+							<li>MUGS</li>
+							<li>FESTIVAL</li>
+							<li>ZOMBIES</li>
+							<li>BLOOD</li>
+							<li>ALL</li>
+						</ul>
+					</li>
+					<li class="out_list">LICENCING
+       					<ul class="dropdown_nav">
+							<li>NEW</li>
+							<li>PICK UPS</li>
+							<li>TECH</li>
+							<li>MUGS</li>
+							<li>FESTIVAL</li>
+							<li>ZOMBIES</li>
+							<li>BLOOD</li>
+							<li>ALL</li>
+						</ul>
+					</li>
+					<li class="out_list">EVERYTHING
+						<ul class="dropdown_nav">
+							<li>NEW</li>
+							<li>PICK UPS</li>
+							<li>TECH</li>
+							<li>MUGS</li>
+							<li>FESTIVAL</li>
+							<li>ZOMBIES</li>
+							<li>BLOOD</li>
+							<li>ALL</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="black_line"></div>
+		</header>
+		<section class="scrolling_banner">
+			<div id="slider_wrap">
+				<div id="slider">
+					<div class="slide">
+					<img src="img/scroll_img1.jpg" alt="" width="100%">
+					<div class="vect_img">
+						<img src="img/scroll_vect_img.png" alt="">
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main>
+			<!-- <div class="grid_img">
+				<div class="col_1">
+					<div class="row_1">
+						<img src="img/img1.jpg" alt="">
+						<img src="img/img2.jpg" alt="">
+					</div>
+					<div class="row_2">
+						<img src="img/img4.jpg" alt="">
+					</div>
+				</div>
+				<div class="col_2">
+					<img src="img/img3.jpg" alt="">
+					<img src="img/img5.jpg" alt="">
+				</div>
+				<div class="col_3">
+					<img src="img/img6.jpg" alt="">
+				</div>
+			</div> -->
+			<div id="img_container">
+				<div class="items one"><img src="img/img1.jpg" alt=""></div>
+				<div class="items two"><img src="img/img2.jpg" alt=""></div>
+				<div class="items three"><img src="img/img3.jpg" alt=""></div>
+				<div class="items bi four"><img src="img/img4.jpg" alt=""></div>
+				<div class="items five"><img src="img/img6.jpg" alt=""></div>
+				<div class="items six"><img src="img/img5.jpg" alt=""></div>
+			</div>
+		</main>
+		<footer class="clearfix">
+			<div class="col_f_1">
+				<ul>
+					<li>ABOUT US</li>
+					<li>BLOG</li>
+					<li>FAQ</li>
+					<li>GIFT REGISTRATION</li>
+					<li>DOQNLOAD OUR CATALOGUE</li>
+				</ul>
+			</div>
+			<div class="col_f_2">
+				<div class="subsc">
+					<p>SIGN UP TO OUR NEWSLETTER</p>
+					<form class="subscribe" action="">
+						<input type="text" placeholder="YOUR EMAIL">
+						<input type="submit" name="submit" value="">
+					</form>
+				</div>
+				<div class="social">
+					<p>FOLLOW US</p>
+					<img src="img/f.png" alt=""><img src="img/tw.png" alt="">
+				</div>
+			</div>
+		</footer>
+		<div class="ft_down">
+				<p>©Copyright 2006-2016 Gift Republic Ltd.</p>
+				<ul>
+					<li>TERMS & CONDITIONS</li>
+					<li>PRIVACY POLICY</li>
+					<li>TERMS OF USE</li>
+					<li>SITE MAP</li>
+				</ul>
+		</div>
+	</div>
+	<script>
+		var $container = $('#img_container');
+		$container.imagesLoaded( function() {
+		  	$container.masonry({
+  				columnWidth: 287,
+  				itemSelector: '.items',
+  				isFitWidth: true
+			});
+		});
+	</script>
+</body>
+</html>
