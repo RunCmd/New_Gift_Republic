@@ -143,6 +143,9 @@ z-index:10;top:0;width:100%;height:100%;opacity:0.8;}
     opacity: 1;
    /* padding: 20px 0px; */
 }
+.dropdown:hover .drop-caret{
+    display:inline;
+}
 /* =====  ========== */
 .dropdown-menu-large .container > li > ul > li > a {
   padding: 5px 0px;
@@ -151,7 +154,7 @@ z-index:10;top:0;width:100%;height:100%;opacity:0.8;}
   line-height: 1.428571429;
   color: #333333;
   white-space: normal;
-  font-family: 'Gothic-bold';
+  font-family: 'Gothic-regular';
   text-transform:uppercase;
   font-size:14px;
   line-height: 1em;
@@ -171,6 +174,12 @@ z-index:10;top:0;width:100%;height:100%;opacity:0.8;}
 /*  .nav-dashed{width:65%; border-right:1px dashed black;min-height: 120px;}*/
 /*.col-md-pull-2 .nav-dashed{padding:0;}
 .col-md-pull-1 .nav-dashed{padding:0;}*/
+ul.nav-dashed{
+  width: 70%;
+    border-right: 1px solid #9b9d9d;
+    min-height:185px;
+}
+
 /* =========================== */
 
 /* SECTION IMAGES/ALL */
@@ -186,7 +195,7 @@ z-index:10;top:0;width:100%;height:100%;opacity:0.8;}
 
 .images-all .vertical-double{min-height:562px;max-width: 100%;}
 .background-about{background-image:url("../images/fetaured-products/reg-block.png");background-repeat:no-repeat;background-size:cover;}
-.background-about h1{margin:10px auto;color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.93px 40px;
+.background-about h1{margin:10px auto 15px;color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.93px 40px;
     text-align: center;}
 .background-about a:hover{color:#066d5b;text-decoration:none;background-color:transparent;color:#066d5b;}
 .background-about a {color:#066d5b;}
@@ -347,7 +356,7 @@ z-index:10;top:0;width:100%;height:100%;opacity:0.8;}
     padding: 0;}
 .foot-nav a{border-bottom:0px solid #fff;text-transform:uppercase;padding:5px 0px;color:#000;font-size:14px;font-family:'Gothic-regular';}
 .foot-nav a:hover{border-bottom:1px solid #fff;text-decoration:none;    border-bottom: 3px solid #ffffff;}
-.foot-nav li{padding:8px 0px;}
+.foot-nav li{padding:8px 0px;text-align:center;}
 .main-footer ul {list-style:none;}
 
 .social-nav{float:right; position: relative;top: 120px;}

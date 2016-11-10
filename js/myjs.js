@@ -1,12 +1,16 @@
 // Author:Daniel Neshkoski
 
 $(document).ready(function(){
-	$(".drop-hover").hover(function(e){
-		$('.drop-caret').toggle();
-	});
-	$(".dropdown-menu-large").hover(function(e){
-		$('.drop-caret').show();
-	});
+	// $(".drop-hover").hover(function(e){
+ //            $('.drop-caret').each(function(){
+ //    		$(this).toggle();
+ //        });
+	// });
+	// $(".dropdown-menu-large").hover(function(e){
+	// 	$('.drop-caret').each(function(){
+ //            $(this).show();
+ //        });
+	// });
 	// On scroll down Main Menu Mobile
 	if($(window).width() < 768){
 	 $(window).scroll(function() {
@@ -51,7 +55,9 @@ $(document).ready(function(){
             }
         });
 $(document).hover(function () {
-    $(".drop-caret").hide();
+   // $('.drop-caret').each(function(){
+   //          $(this).hide();
+   //      });
 });
 	//Sticky Header
 	$(window).scroll(function() {
