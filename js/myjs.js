@@ -54,11 +54,24 @@ $(document).ready(function(){
                 $('#top-page').fadeOut(300);
             }
         });
-$(document).hover(function () {
-   // $('.drop-caret').each(function(){
-   //          $(this).hide();
-   //      });
-});
+
+   $('.hover-text').each(function(){
+        $(this).mouseenter(function(){
+              $(this).next("div").css({"opacity":"1", "transition" : "ease-in 0.2s all"});
+          });
+        $(this).mouseleave(function(){
+              $(this).next("div").css({"opacity":"0", "transition" : "ease-in 0.2s all"});
+          });
+   });
+   $('.bg-hover-image img').mouseenter(function(){
+      $(".img-description").css({"opacity":"1", "transition" : "ease-in 0.2s all"});
+   });
+    $('.bg-hover-image img').mouseleave(function(){
+      $(".img-description").css({"opacity":"0", "transition" : "ease-in 0.2s all"});
+   });
+
+         
+
 	//Sticky Header
 	$(window).scroll(function() {
 

@@ -51,7 +51,7 @@
     <!-- HEADER END  -->
     <!-- MENU NAVIGATION / DROPDOWN -->
     <section class="main-navigation">
-      <nav class="navbar">
+     <nav class="navbar">
         <div class="navbar-header">
         <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -59,39 +59,40 @@
         </button>
       </div>
        <div class="collapse navbar-collapse js-navbar-collapse">
+
         <ul class="nav navbar-nav">
           <li class="dropdown dropdown-large drop-hover">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret drop-caret hidden-xs"></b></a>
-            
+
             <ul class="dropdown-menu dropdown-menu-large row">
             <div class="container contain-menu">
-              <li class="col-md-3 col-sm-3 push-left-first">
-                <ul>
+              <li class="col-md-3 col-sm-3">
+                <ul class="nav-dashed">
                   <li><a href="#">New</a></li>
                   <li><a href="#">Bathroom</a></li>
                   <li><a href="#">Drinking</a></li>
                   <li><a href="#">Fun Stuff</a></li>
                 </ul>
               </li>
-              <li class="col-md-3 col-sm-3 push-left-second">
-                <ul>
+              <li class="col-md-3 col-sm-3">
+                <ul id="dash-big">
                   <li><a href="#">Games Room</a></li>
                   <li><a href="#">Gift Sets</a></li>
                   <li><a href="#">Kitchen</a></li>
                   <li><a href="#">Living</a></li>
                 </ul>
               </li>
-              <li class="col-md-4 col-sm-3">
-                <ul>
+              <li class="col-md-3 col-sm-3 ">
+                <ul class="nav-dashed">
                   <li><a href="#">Mugs</a></li>
                   <li><a href="#">Outdoor</a></li>
                   <li><a href="#">Personal Accessories</a></li>
                   <li><a href="#">Stationary</a></li>
                 </ul>
               </li>
-              <li class="col-md-2  col-sm-3 col-md-pull-1">
-                <ul>
-                  <li><a href="#">Tech</a></li>
+              <li class="col-md-2 col-sm-3">
+                <ul class="nav-single-dash">
+                  <li><a href="products.html">Tech</a></li>
                   <li><a href="#">Trivia</a></li>
                 </ul>
               </li>
@@ -99,29 +100,56 @@
             </ul>
             
           </li>
-          <li class="dropdown dropdown-large">
-            <a href="category.html" class="">Collections</a>
+          <li class="dropdown dropdown-large drop-hover">
+            <a href="#" class="dropdown-toggle">Collections <b class="caret drop-caret hidden-xs"></b></a>
+      <ul class="dropdown-menu dropdown-menu-large row">
+            <div class="container contain-menu">
+              <li class="col-md-3 col-sm-3">
+                <ul class="nav-dashed">
+                  <li><a href="#">ADOPT IT</a></li>
+                  <li><a href="#">BLUE WILLOW</a></li>
+                  <li><a href="#">CAMOWARE</a></li>
+                  <li><a href="#">ECOLOGIE</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3 col-sm-3">
+                <ul id="dash-big">
+                  <li><a href="#">FUN STUFF</a></li>
+                  <li><a href="#">GAMES OF TRIVIA</a></li>
+                  <li><a href="#">GROW ITS</a></li>
+                  <li><a href="#">MAN OF THE WORLD</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3 col-sm-3">
+                <ul class="nav-dashed">
+                  <li><a href="#">MATT SEWELL</a></li>
+                  <li><a href="#">MR MEN</a></li>
+                  <li><a href="#">PERSONALISE IT</a></li>
+                  <li><a href="#">PLAYING CARDS</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3  col-sm-3">
+                <ul class="nav-single-dash">
+                  <li> <a href="products.html">THE ROYALTY COLLECTION</a></li>
+                  <li><a href="#">VICTORIANA</a></li>
+                  <li><a href="#">WILD LIFE</a></li>
+                </ul>
+              </li>
+              </div>
+            </ul>
           </li>
           <li class="dropdown dropdown-large">
             <a href="#" class="">Everything</a>
           </li>
           <li class="dropdown dropdown-large">
-            <a href="#" class="">Gift Regestration</a>
+            <a href="#" class="">Gift Registration</a>
           </li>
           <li class="dropdown dropdown-large">
             <a href="#" class="">Contact</a>
           </li>
-           <li class="dropdown dropdown-large hidden-lg hidden-md hidden-sm">
-            <a href="#" class="">Register</a>
-          </li>
-           <li class="dropdown dropdown-large hidden-lg hidden-md hidden-sm">
-            <a href="#" class="">Login</a>
-          </li>
         </ul>
-        
-      </div><!-- /.nav-collapse -->
-    </nav>
-    <!-- Header End-->
+        </div>
+      </nav><!-- /.nav-collapse -->
 </section>
     <!-- SECTION PRODUCT LIST -->
     <section class="product-list-item fade-in">
@@ -132,7 +160,7 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="item-img">
+            <div class="item-img col-md-12">
               <img src="images/products/main-product-image.png" alt="speaker mic rockability" class="img-responsive"  id="main-image">
             </div>
             <div class="items-images">
@@ -188,6 +216,9 @@
                <div class="col-md-2 col-xs-2">
                 <img src="images/list-products/ZombieBike_InSitu.png" alt="cap Zappa Wood">
               </div>
+              <div class="col-md-2 col-xs-2">
+                <img src="images/list-products/similar-product-1.png" alt="cap Zappa Wood">
+              </div>
             </div>			
           </div>	  		  
          </div>
@@ -218,15 +249,39 @@
       <footer class="main-footer">
           <div class="container">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-3">
                 <ul class="foot-nav">
-                  <li><a href='#'>About Us</a></li>
+                  <li><a href='aboutus.html'>ADOPT ITS</a></li>
+                  <li><a href='#'>FAIRYTALES</a></li>
+                  <li><a href='#'>GIFTS FOR HIM</a></li>
+                  <li><a href='#'>GIFTS FOR HER</a></li>
+                  <li><a href='#'>HOMEWARE</a></li>
+                  <li><a href='#'>PERSONALISED ITS </a></li>
+                </ul>
+              </div>
+             <div class="col-md-3">
+                <ul class="foot-nav">
+                  <li><a href='aboutus.html'>About Us</a></li>
                   <li><a href='#'>FAQ</a></li>
                   <li><a href='#'>Gift Registration</a></li>
                   <li><a href='#'>Download Our Catalogue</a></li>
                 </ul>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
+                <ul class="foot-nav">
+                  <li><a href='aboutus.html'>CONTACT US</a></li>
+                  <li><a href='#'>DELIVERY</a></li>
+                  <li><a href='#'>PRIVACY POLICY</a></li>
+                  <li><a href='#'>RETURNS</a></li>
+                  <li><a href='#'>TERMS</a></li>
+                  <li><a href='#'>TRACK YOUR ORDER</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+              <ul class="social-nav"> 
+              <li><a href=""><i class="fa fa-envelope"></i> info@giftrepublic.com</a></li>
+              <li><a href=""><i class="fa fa-phone"></i> 0208 542 4836</a></li>
+              </ul>
                 <ul class="social-nav">
                   <li><a href=""><img src="images/socials/facebook_icon.png" alt="facebook"></a></li>
                   <li><a href=""><img src="images/socials/twitter_icon.png" alt="twitter"></a></li>
@@ -236,20 +291,26 @@
           </div>
       </footer>
       <div class="container">
-       <div class="row">
+          <div class="row">
             <div class="col-md-12">
               <ul class="nav-copyrights nav text-center">
-                <li class="text-left">©Copyright 2006-2016 Gift Republic Ltd.</li>
-                <li><span>|</span></li>
-                <li><a href="#">TERMS & CONDITIONS </a></li>
-                <li><span>|</span></li>
-                <li><a href="#">PRIVACY POLICY</a></li>
-                <li><span>|</span></li>
-                <li><a href="#">TERMS OF USE</a></li>
-                <li><span>|</span></li>
-                <li><a href="#">SITE MAP</a></li>
+                <li><img src="images/payment/VISA.gif" alt="" class="img-responsive"></li>
+                 <li><img src="images/payment/PayPal2.gif" alt="" class="img-responsive"></li>
+                <li><img src="images/payment/AMEX.gif" alt="" class="img-responsive"></li>
+                <li><img src="images/payment/JCB.gif" alt="" class="img-responsive"></li>
+                <li><img src="images/payment/maestro.gif" alt="" class="img-responsive"></li>
+                <li><img src="images/payment/mastercard.gif" alt="" class="img-responsive"></li>
+                <li><img src="images/payment/poweredByWorldPay.gif" alt="" class="img-responsive"></li>
+              
               </ul>
             </div>
+            <div class="col-md-12">
+            <div class="text-center">
+            <p>©Copyright 2006-2016 Gift Republic Ltd.</p></div>
+            </div>
+          </div>
+          <div class="to-top">
+            <span id="top-page"><i class="fa fa-arrow-circle-up fa-lg" aria-hidden="true"></i></span>
           </div>
      </div>
     <!-- END FOOTER SECTION -->
